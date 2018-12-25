@@ -1,0 +1,228 @@
+﻿%% 
+%% This is file `jsize10.clo', generated 
+%% on <1996/1/24> with the docstrip utility (2.2i).
+%% 
+%% The original source files were:
+%% 
+%% jclasses.dtx  (with options: `10pt,yoko')
+%% 
+%% Copyright 1994,1995 ASCII Corporation. 
+%% 
+%% Copyright 1994 the LaTeX3 project and the individual authors. 
+%% All rights reserved. For further copyright information see the file 
+%% legal.txt, and any other copyright indicated in this file. 
+%% 
+%% This file is part of the pLaTeX2e system. 
+%% ----------------------------------------- 
+%% 
+%% This system is distributed in the hope that it will be useful, 
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of 
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+%% 
+%% 
+%% IMPORTANT NOTICE: 
+%% 
+%% For error reports in case of UNCHANGED versions see readme files. 
+%% 
+%% Please do not request updates from us directly. Distribution is 
+%% done through Mail-Servers and TeX organizations. 
+%% 
+%% You are not allowed to change this file. 
+%% 
+%% You are allowed to distribute this file under the condition that 
+%% it is distributed together with all files mentioned in 00readme.txt. 
+%% 
+%% If you receive only some of these files from someone, complain! 
+%% 
+%% You are NOT ALLOWED to distribute this file alone. You are NOT 
+%% ALLOWED to take money for the distribution or use of either this 
+%% file or a changed version, except for a nominal charge for copying 
+%% etc. 
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\NeedsTeXFormat{pLaTeX2e}
+\ProvidesFile{jsize10.clo}
+  [1995/08/30 v1.0a Standard pLaTeX file (size option)]
+\renewcommand{\normalsize}{%
+    \@setfontsize\normalsize\@xpt{15}%
+  \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+  \abovedisplayshortskip \z@ \@plus3\p@
+  \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+%\setbox0\hbox{\char\euc"A1A1}%
+\setbox0\hbox{\char\jis"2121}%
+\setlength\Cht{\ht0}
+\setlength\Cdp{\dp0}
+\setlength\Cwd{\wd0}
+\setlength\Cvs{\baselineskip}
+\setlength\Chs{\wd0}
+\newcommand{\small}{%
+  \@setfontsize\small\@ixpt{11}%
+  \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
+  \abovedisplayshortskip \z@ \@plus2\p@
+  \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+  \def\@listi{\leftmargin\leftmargini
+              \topsep 4\p@ \@plus2\p@ \@minus2\p@
+              \parsep 2\p@ \@plus\p@ \@minus\p@
+              \itemsep \parsep}%
+  \belowdisplayskip \abovedisplayskip}
+\newcommand{\footnotesize}{%
+  \@setfontsize\footnotesize\@viiipt{9.5}%
+  \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
+  \abovedisplayshortskip \z@ \@plus\p@
+  \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
+  \def\@listi{\leftmargin\leftmargini
+              \topsep 3\p@ \@plus\p@ \@minus\p@
+              \parsep 2\p@ \@plus\p@ \@minus\p@
+              \itemsep \parsep}%
+  \belowdisplayskip \abovedisplayskip}
+\newcommand{\scriptsize}{\@setfontsize\scriptsize\@viipt\@viiipt}
+\newcommand{\tiny}{\@setfontsize\tiny\@vpt\@vipt}
+\newcommand{\large}{\@setfontsize\large\@xiipt{17}}
+\newcommand{\Large}{\@setfontsize\Large\@xivpt{21}}
+\newcommand{\LARGE}{\@setfontsize\LARGE\@xviipt{25}}
+\newcommand{\huge}{\@setfontsize\huge\@xxpt{28}}
+\newcommand{\Huge}{\@setfontsize\Huge\@xxvpt{33}}
+\setlength\headheight{12\p@}
+\setlength\headsep{25\p@}
+\setlength\topskip{1\Cht}
+\setlength\footskip{30\p@}
+\if@compatibility
+  \setlength\maxdepth{4\p@}
+\else
+  \setlength\maxdepth{.5\topskip}
+\fi
+\setlength\@maxdepth\maxdepth
+
+%%-----------------------------------------
+%% latex2.0.9 (a*j.sty, b*j.sty)風設定
+%%
+\setlength\topmargin{-0.3in}
+\ifcase\@paper
+% \@paper=0 は未定義
+\or % A4
+  \setlength\textheight{43\baselineskip}
+  \setlength\textwidth{47zw}
+\or % A5
+  \setlength\textheight{26\baselineskip}
+  \setlength\textwidth{28zw}
+\or % B4
+  \setlength\textheight{55\baselineskip}
+  \setlength\textwidth{60zw}
+\or % B5
+  \setlength\textheight{35\baselineskip}
+  \setlength\textwidth{37zw}
+\fi
+\addtolength\textheight{\topskip}
+\@settopoint\textwidth
+\@settopoint\textheight
+\@settopoint\topmargin
+%%
+%%-----------------------------------------
+
+\if@twocolumn
+  \setlength\marginparsep{10\p@}
+\else
+  \setlength\marginparsep{10\p@}
+\fi
+\setlength\marginparpush{5\p@}
+\if@compatibility
+    \if@twoside
+      \setlength\oddsidemargin   {44\p@}
+      \setlength\evensidemargin  {82\p@}
+      \setlength\marginparwidth {107\p@}
+    \else
+     \setlength\oddsidemargin   {60\p@}
+     \setlength\evensidemargin  {60\p@}
+     \setlength\marginparwidth  {90\p@}
+  \fi
+  \if@twocolumn
+     \setlength\oddsidemargin  {30\p@}
+     \setlength\evensidemargin {30\p@}
+     \setlength\marginparwidth {48\p@}
+  \fi
+\else
+  \setlength\@tempdima{\paperwidth}
+  \addtolength\@tempdima{-\textwidth}
+  \if@twoside
+    \setlength\oddsidemargin{.4\@tempdima}
+  \else
+    \setlength\oddsidemargin{.5\@tempdima}
+  \fi
+  \addtolength\oddsidemargin{-1in}
+  \@settopoint\oddsidemargin
+  \setlength\evensidemargin{\paperwidth}
+  \addtolength\evensidemargin{-2in}
+  \addtolength\evensidemargin{-\textwidth}
+  \addtolength\evensidemargin{-\oddsidemargin}
+  \@settopoint\evensidemargin
+  \if@twoside
+    \setlength\marginparwidth{.6\@tempdima}
+    \addtolength\marginparwidth{-.4in}
+  \else
+    \setlength\marginparwidth{.5\@tempdima}
+    \addtolength\marginparwidth{-.4in}
+  \fi
+  \ifdim \marginparwidth >2in
+    \setlength\marginmarwidth{2in}
+  \fi
+  \@settopoint\marginparwidth
+\fi
+\setlength\footnotesep{6.65\p@}
+\setlength{\skip\footins}{9\p@ \@plus 4\p@ \@minus 2\p@}
+\setlength\floatsep    {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\textfloatsep{20\p@ \@plus 2\p@ \@minus 4\p@}
+\setlength\intextsep   {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\dblfloatsep    {12\p@ \@plus 2\p@ \@minus 2\p@}
+\setlength\dbltextfloatsep{20\p@ \@plus 2\p@ \@minus 4\p@}
+\setlength\@fptop{0\p@ \@plus 1fil}
+\setlength\@fpsep{8\p@ \@plus 2fil}
+\setlength\@fpbot{0\p@ \@plus 1fil}
+\setlength\@dblfptop{0\p@ \@plus 1fil}
+\setlength\@dblfpsep{8\p@ \@plus 2fil}
+\setlength\@dblfpbot{0\p@ \@plus 1fil}
+\setlength\partopsep{2\p@ \@plus 1\p@ \@minus 1\p@}
+\def\@listI{\leftmargin\leftmargini
+  \parsep 4\p@ \@plus2\p@ \@minus\p@
+  \topsep 8\p@ \@plus2\p@ \@minus4\p@
+  \itemsep4\p@ \@plus2\p@ \@minus\p@}
+\let\@listi\@listI
+\@listi
+\def\@listii{\leftmargin\leftmarginii
+   \labelwidth\leftmarginii \advance\labelwidth-\labelsep
+   \topsep  4\p@ \@plus2\p@ \@minus\p@
+   \parsep  2\p@ \@plus\p@  \@minus\p@
+   \itemsep\parsep}
+\def\@listiii{\leftmargin\leftmarginiii
+   \labelwidth\leftmarginiii \advance\labelwidth-\labelsep
+   \topsep 2\p@  \@plus\p@\@minus\p@
+   \parsep\z@
+   \partopsep \p@ \@plus\z@ \@minus\p@
+   \itemsep\topsep}
+\def\@listiv {\leftmargin\leftmarginiv
+              \labelwidth\leftmarginiv
+              \advance\labelwidth-\labelsep}
+\def\@listv  {\leftmargin\leftmarginv
+              \labelwidth\leftmarginv
+              \advance\labelwidth-\labelsep}
+\def\@listvi {\leftmargin\leftmarginvi
+              \labelwidth\leftmarginvi
+              \advance\labelwidth-\labelsep}
+\endinput
+%% 
+%% End of file `jsize10.clo'.

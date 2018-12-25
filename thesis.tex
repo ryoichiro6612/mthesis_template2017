@@ -1,0 +1,106 @@
+\documentclass[10pt,a4paper]{jmasterthesis}
+\usepackage{graphicx}
+\usepackage{longtable}
+%\usepackage{supertabular}
+%\usepackage[normalsize]{subfig}
+\usepackage{subfig}
+%\usepackage{amsmath}
+%\usepackage{type1cm}
+\usepackage{times}
+%\usepackage{enumerate}
+%\usepackage{tabularx}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,bm}
+
+\usepackage{ascmac}
+
+\usepackage{multirow}
+
+
+\setcounter{topnumber}{10}            % ページの上部に含める図表の数
+\def\textfraction{.2}                % ページ内の文章領域の最小の割合
+\setcounter{dbltopnumber}{10}         % ↑の二段組 version
+\def\topfraction{.8}                 % ページの上部で図の占める割合の上限
+\def\dbltopfraction{.8}              % ↑の二段組 version
+\def\bottomfraction{.8}
+\def\floatpagefraction{.6}        % 図表のみのページで図表の占める割合の下限
+\def\dblfloatpagefraction{.8}        % ↑の二段組 version
+
+\renewcommand{\labelenumi}{(\theenumi)}
+
+\def\Hline{\noalign{\hrule height 1pt}}
+
+\makeatletter 
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+
+%%%% table
+%\usepackage{hhline}
+%\usepackage{array}
+%\def\thline{\noalign{\hrule height 1pt}}
+%\def\tvline{\vrule width 1pt} 
+%%%%
+%
+%%%% nyq, blur, cut，obj, peak
+%\def\nyq{\mathop{\mathrm{nyq}}\nolimits}
+%\def\blur{\mathop{\mathrm{blur}}\nolimits}
+%\def\cut{\mathop{\mathrm{cut}}\nolimits}
+%\def\obj{\mathop{\mathrm{obj}}\nolimits}
+%\def\peak{\mathop{\mathrm{peak}}\nolimits}
+%\def\ng{\mathop{\mathrm{ng}}\nolimits}
+%%%%
+%
+%\setlength{\columnseprule}{0.4pt}
+
+\begin{document}
+\title{
+\huge{グループワークにおける付箋配置に基づく実時間カテゴリ認識}\\
+\LARGE{}\\
+\huge{}\\英語タイトru
+\LARGE{}
+}
+
+
+\author{小松崎　涼一朗}
+\date{平成 29 年度}
+\councelor{苗村 健 教授}
+\course{先端表現情報学コース}
+\ID{49-176311}
+
+\maketitle
+
+\pagenumbering{roman}
+% 内容梗概
+\include{abstract}
+
+% 目次
+\tableofcontents
+\listoffigures 
+\listoftables
+
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%\pagestyle{headings}
+
+% 本文
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+
+% 付録
+%\include{appendix}
+
+% 謝辞
+\include{acknowledgement}
+
+% 参考文献
+%\bibliographystyle{junsrt}
+\bibliographystyle{ieee}
+\bibliography{mybib}
+
+\end{document}
